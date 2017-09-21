@@ -1,0 +1,61 @@
+/* Main body ----------------------------------------------------------*/
+
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+
+}
+
+/* Header and Nav Bar -----------------------------------------------*/
+#header {
+  position: fixed;
+  display: flex;
+  height: 69px;
+  width: 100%;
+  justify-content: space-between;
+
+
+}
+
+#header img {
+margin-left: 10px;
+height: 50px;
+width: auto;
+
+}
+
+#header li {
+  display: inline-flex;
+  padding: 0 20px;
+
+}
+
+#main_nav{
+  display: inline-flex;
+
+}
+
+/* Full-screen Landing Page -----------------------------------------------*/
+
+/* Subfooter-------------------------------------------------------------------*/
+#subfooter {
+  height: 200px;
+  width: 100%;
+
+}
+
+#subfooter h5 {
+  text-align: center;
+}
+
+/* Footer-------------------------------------------------------------------*/
+#footer h6 {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+
+}
