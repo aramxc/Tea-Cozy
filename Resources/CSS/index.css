@@ -7,10 +7,19 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
-
 }
 
+
+/* Spacer between sections ------------------------------------------*/
+
+#spacer {
+  height: 69px;
+  width: 100%;
+}
+
+
 /* Header and Nav Bar -----------------------------------------------*/
+
 #header {
   top: 0px;
   left: 0px;
@@ -23,58 +32,68 @@ body {
   border-bottom: 1px solid seashell;
   background-color: black;
   z-index: 10;
-
-
 }
 
 #header img {
-margin-left: 10px;
-height: 50px;
-width: auto;
-
+  margin-left: 10px;
+  height: 50px;
+  width: auto;
 }
 
 #header li {
   display: inline-flex;
   padding: 0 20px;
-
 }
 
-#main_nav{
+#main_nav {
   display: inline-flex;
-
 }
 
 #main_nav a {
-  text-decoration: underline;
   color: seashell;
-
+  text-decoration: none;
 }
 
 #main_nav a:visited {
-  text-decoration: underline;
+  text-decoration: none;
   color: seashell;
-
 }
 
-/* Container -----------------------------------------------*/
-#container {
 
-
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
 }
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: seashell;
+}
+
+
+/* Container -----------------------------------------------------------------*/
+
+#container {}
+
 
 /* Full-screen Landing Page -----------------------------------------------*/
+
 #fullscreen-main-landing {
-margin-top: 69px;
-height: 110vh;
-width: 100%;
-z-index: 0;
-display: flex;
-justify-content: space-around;
-
-
-
-
+  margin-top: auto;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 #mission-bg {
@@ -83,70 +102,108 @@ justify-content: space-around;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
 
 #mission-bg img {
   height: auto;
-  width: 100%
-  position: relative;
-  opacity: 0.65;
-
-
-
-
+  width: 100% position: relative;
+  opacity: 0.75;
 }
 
 #mission-statement {
-position: absolute;
-
+  position: absolute;
 }
 
-/* Full-screen totm -----------------------------------------------*/
+
+/* Full-screen totm -------------------------------------------------------*/
+
 #fullscreen-totm {
+  margin-top: auto;
   height: 110vh;
   width: 100%;
   z-index: 0;
-
 }
-  #tea-flexbox {
+
+#tea-flexbox {
   width: 1000px;
   height: auto;
-  background-color: cyan;
   z-index: 5;
-  display:inline-flex;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-
-
-
-  }
-
-  #tea-flexbox img {
+#tea-flexbox img {
   height: 200px;
   width: 300px;
+  margin: 10px;
+  flex-shrink: 2;
+}
+
+#tea-items h4 {
+  margin-top: auto;
+}
 
 
+/* Full-screen locations -------------------------------------------------------*/
 
-  }
+#fullscreen-locations {
+  margin-top: auto;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
 
-  #tea-flexbox li {
+}
+
+#locations-bg {
+  height: 500px;
+  width: 1200px;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+#locations-bg img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+   opacity: 0.75;
+}
 
-   #tea-flexbox h4 {
-    display: inline-flex;
-    position: absolute;
+#locations-flexmajor {
 
-   }
+  position: absolute;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
 
+}
 
-/* Subfooter-------------------------------------------------------------------*/
+#locations-flexminor {
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items
+  height: auto;
+  width: 300px;
+
+}
+
+/* Subfooter-----------------------------------------------------------------*/
+
 #subfooter {
+
   height: 200px;
   width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 
 }
 
@@ -154,10 +211,11 @@ position: absolute;
   text-align: center;
 }
 
+
 /* Footer-------------------------------------------------------------------*/
+
 #footer h6 {
   width: 100%;
   text-align: left;
   margin-left: 20px;
-
 }

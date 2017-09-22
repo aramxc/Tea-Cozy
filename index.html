@@ -6,25 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Tea Cozy is an Artisinal Tea House in the Bay Area with a focus on sustainable, small-batch, fair trade, organic tea." />
-  <title>Tea Cozy - Artisan Teas in the Bay Area</title>
+  <title>Tea Cozy - Artisan Teas in Portland, Maine</title>
   <link rel="stylesheet" text="text/css" href="/Resources/CSS/index.css">
+
 </head>
 
 <body>
   <!-- Header --------------------------------------->
   <div id="header">
-    <img src="/Resources/Images/img-tea-cozy-logo.png" alt="Tea Cozy" />
+    <a href="#main-landing"><img src="/Resources/Images/img-tea-cozy-logo.png" alt="Tea Cozy" /></a>
     <!-- Nav Menu --------------------------------------->
     <ul id="main_nav">
-      <li><a href="#">Mission</a></li>
-      <li><a href="#tea-spotlight">Featured Tea</a></li>
-      <li><a href="#locations">Locations</a></li>
+      <li><a href="#main-landing" class = "sliding-middle-out">Mission</a></li>
+      <li><a href="#tea-spotlight" class = "sliding-middle-out">Featured Tea</a></li>
+      <li><a href="#locations" class = "sliding-middle-out">Locations</a></li>
     </ul>
   </div>
   <!-- Container div--------------------------------------->
   <div id="container">
     <!-- Main landing content--------------------------------------->
     <section id="main-landing">
+      <div id="spacer"></div>
       <div id="fullscreen-main-landing">
         <div id="mission-bg">
           <img src="/Resources/Images/img-mission-background.jpg" alt="Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea" />
@@ -36,32 +38,67 @@
       </div>
   </div>
   </section>
+
   <!-- Secondary content --------------------------------------->
   <section id="tea-spotlight">
+    <div id="spacer"></div>
     <div id="fullscreen-totm">
       <h2>Tea of the Month</h2>
       <h4>What's Steeping at The Tea Cozy?</h4>
       <div id="tea-flexbox">
-        <ol>
-          <li><img src="Resources\Images\img-berryblitz.jpg" alt="Berry Blitz Tea"></li>
+        <div id="tea-items">
+          <img src="Resources\Images\img-berryblitz.jpg" alt="Berry Blitz Tea" />
           <h4>Fall Berry Blitz Tea</h4>
-          <li><img src="Resources\Images\img-spiced-rum.jpg" alt="Spiced Rum Tea"></li>
+        </div>
+        <div id="tea-items">
+          <img src="Resources\Images\img-spiced-rum.jpg" alt="Spiced Rum Tea" />
           <h4>Spiced Rum Tea</h4>
-          <li><img src="Resources\Images\img-donut.jpg" alt="Seasonal Donuts"></li>
+        </div>
+        <div id="tea-items">
+          <img src="Resources\Images\img-donut.jpg" alt="Seasonal Donuts" />
           <h4>Seasonal Donuts</h4>
-          <li><img src="Resources\Images\img-myrtle-ave.jpg" alt="Myrtle Ave Tea"></li>
-          <h4>Myrtle Ave Tea</h4>
-          <li><img src="Resources\Images\img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea"></li>
+        </div>
+        <div id="tea-items">
+          <img src="Resources\Images\img-myrtle-ave.jpg" alt="Myrtle Ave Tea" />
+          <h4>Seasonal Donuts</h4>
+        </div>
+        <div id="tea-items">
+          <img src="Resources\Images\img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea" />
           <h4>Bedford Bizarre Tea</h4>
-        </ol>
+        </div>
       </div>
     </div>
   </section>
   <!-- Locations content--------------------------------------->
   <section id="locations">
-    <div id="full-screen-locations">
-      Locations
-    </div>
+    <div id="spacer"></div>
+    <div id="fullscreen-locations">
+      <div id="locations-bg">
+        <div id="locations-flexmajor">
+          <h2>Locations</h2>
+          <div id="locations-flexminor">
+            <h3>Downtown</h3>
+            <h4>384 West 4th Street</h4>
+            <h4>Suite 108</h4>
+            <h4>Portland, Maine</h4>
+          </div>
+          <div id="locations-flexminor">
+            <h3>East Bayside</h3>
+            <h4>3433 Fisherman's Avenue</h4>
+            <h4>(Northwest Corner)</h4>
+            <h4>Portland, Maine</h4>
+          </div>
+          <div id="locations-flexminor">
+            <h3>Oakdale</h3>
+            <h4>515 Crescent Avenue</h4>
+            <h4>Second Floor</h4>
+            <h4>Portland, Maine</h4>
+          </div>
+
+        </div>
+        <img src="Resources\Images\img-locations-background.jpg" alt="Serving communities in Downtown Portland, East Bayside and Oakdale." />
+        <div id="mission-statement">
+        </div>
   </section>
   <!-- Subfooter--------------------------------------->
   <section id="subfooter">
@@ -73,12 +110,14 @@
   </section>
   <!-- Footer--------------------------------------->
   <div id="footer">
+
     <h6>&copy copyright The Tea Cozy 2017</h6>
   </div>
   </div>
   <!-- links for external scripts --------------------------------------->
-  <script type="text/javascript" src = "\Resources\Javascript\index.js"></script>
+  <script src="\Resources\Javascript\jquery.min.js"></script>
+  <script src="\Resources\Javascript\index.js"></script>
+</body>
 
-  </body>
 
 </html>
