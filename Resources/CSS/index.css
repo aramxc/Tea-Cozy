@@ -12,11 +12,17 @@ body {
 
 /* Header and Nav Bar -----------------------------------------------*/
 #header {
+  top: 0px;
+  left: 0px;
   position: fixed;
   display: flex;
   height: 69px;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 10;
 
 
 }
@@ -39,7 +45,103 @@ width: auto;
 
 }
 
+#main_nav a {
+  text-decoration: underline;
+  color: seashell;
+
+}
+
+#main_nav a:visited {
+  text-decoration: underline;
+  color: seashell;
+
+}
+
+/* Container -----------------------------------------------*/
+#container {
+
+
+}
+
 /* Full-screen Landing Page -----------------------------------------------*/
+#fullscreen-main-landing {
+margin-top: 69px;
+height: 110vh;
+width: 100%;
+z-index: 0;
+display: flex;
+justify-content: space-around;
+
+
+
+
+}
+
+#mission-bg {
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+#mission-bg img {
+  height: auto;
+  width: 100%
+  position: relative;
+  opacity: 0.65;
+
+
+
+
+}
+
+#mission-statement {
+position: absolute;
+
+}
+
+/* Full-screen totm -----------------------------------------------*/
+#fullscreen-totm {
+  height: 110vh;
+  width: 100%;
+  z-index: 0;
+
+}
+  #tea-flexbox {
+  width: 1000px;
+  height: auto;
+  background-color: cyan;
+  z-index: 5;
+  display:inline-flex;
+
+
+
+
+  }
+
+  #tea-flexbox img {
+  height: 200px;
+  width: 300px;
+
+
+
+  }
+
+  #tea-flexbox li {
+  display: inline-flex;
+
+  }
+
+   #tea-flexbox h4 {
+    display: inline-flex;
+    position: absolute;
+
+   }
+
 
 /* Subfooter-------------------------------------------------------------------*/
 #subfooter {
